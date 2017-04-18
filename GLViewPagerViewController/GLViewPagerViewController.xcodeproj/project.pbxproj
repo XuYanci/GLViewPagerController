@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADFFFB9A1EA5F32E002CB3DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB991EA5F32E002CB3DC /* main.m */; };
+		ADFFFB9D1EA5F32E002CB3DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB9C1EA5F32E002CB3DC /* AppDelegate.m */; };
+		ADFFFBA01EA5F32E002CB3DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB9F1EA5F32E002CB3DC /* ViewController.m */; };
+		ADFFFBA31EA5F32E002CB3DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFFFBA11EA5F32E002CB3DC /* Main.storyboard */; };
+		ADFFFBA51EA5F32E002CB3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFFFBA41EA5F32E002CB3DC /* Assets.xcassets */; };
+		ADFFFBA81EA5F32E002CB3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFFFBA61EA5F32E002CB3DC /* LaunchScreen.storyboard */; };
+		ADFFFBB31EA5F32E002CB3DC /* GLViewPagerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFBB21EA5F32E002CB3DC /* GLViewPagerViewControllerTests.m */; };
+		ADFFFBBE1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFBBD1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.m */; };
+		ADFFFBD11EA5F366002CB3DC /* GLViewPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFBD01EA5F366002CB3DC /* GLViewPagerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFFFBAF1EA5F32E002CB3DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFFFB8D1EA5F32E002CB3DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFFFB941EA5F32E002CB3DC;
+			remoteInfo = GLViewPagerViewController;
+		};
+		ADFFFBBA1EA5F32E002CB3DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFFFB8D1EA5F32E002CB3DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFFFB941EA5F32E002CB3DC;
+			remoteInfo = GLViewPagerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADFFFB951EA5F32E002CB3DC /* GLViewPagerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLViewPagerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFFFB991EA5F32E002CB3DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADFFFB9B1EA5F32E002CB3DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADFFFB9C1EA5F32E002CB3DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADFFFB9E1EA5F32E002CB3DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADFFFB9F1EA5F32E002CB3DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADFFFBA21EA5F32E002CB3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADFFFBA41EA5F32E002CB3DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADFFFBA71EA5F32E002CB3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADFFFBA91EA5F32E002CB3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFFFBAE1EA5F32E002CB3DC /* GLViewPagerViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLViewPagerViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFFFBB21EA5F32E002CB3DC /* GLViewPagerViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLViewPagerViewControllerTests.m; sourceTree = "<group>"; };
+		ADFFFBB41EA5F32E002CB3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFFFBB91EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLViewPagerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFFFBBD1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLViewPagerViewControllerUITests.m; sourceTree = "<group>"; };
+		ADFFFBBF1EA5F32E002CB3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFFFBCF1EA5F366002CB3DC /* GLViewPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewPagerViewController.h; sourceTree = "<group>"; };
+		ADFFFBD01EA5F366002CB3DC /* GLViewPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewPagerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADFFFB921EA5F32E002CB3DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBAB1EA5F32E002CB3DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBB61EA5F32E002CB3DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADFFFB8C1EA5F32E002CB3DC = {
+			isa = PBXGroup;
+			children = (
+				ADFFFB971EA5F32E002CB3DC /* GLViewPagerViewController */,
+				ADFFFBB11EA5F32E002CB3DC /* GLViewPagerViewControllerTests */,
+				ADFFFBBC1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests */,
+				ADFFFB961EA5F32E002CB3DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADFFFB961EA5F32E002CB3DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFFB951EA5F32E002CB3DC /* GLViewPagerViewController.app */,
+				ADFFFBAE1EA5F32E002CB3DC /* GLViewPagerViewControllerTests.xctest */,
+				ADFFFBB91EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADFFFB971EA5F32E002CB3DC /* GLViewPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFFBCF1EA5F366002CB3DC /* GLViewPagerViewController.h */,
+				ADFFFBD01EA5F366002CB3DC /* GLViewPagerViewController.m */,
+				ADFFFB9B1EA5F32E002CB3DC /* AppDelegate.h */,
+				ADFFFB9C1EA5F32E002CB3DC /* AppDelegate.m */,
+				ADFFFB9E1EA5F32E002CB3DC /* ViewController.h */,
+				ADFFFB9F1EA5F32E002CB3DC /* ViewController.m */,
+				ADFFFBA11EA5F32E002CB3DC /* Main.storyboard */,
+				ADFFFBA41EA5F32E002CB3DC /* Assets.xcassets */,
+				ADFFFBA61EA5F32E002CB3DC /* LaunchScreen.storyboard */,
+				ADFFFBA91EA5F32E002CB3DC /* Info.plist */,
+				ADFFFB981EA5F32E002CB3DC /* Supporting Files */,
+			);
+			path = GLViewPagerViewController;
+			sourceTree = "<group>";
+		};
+		ADFFFB981EA5F32E002CB3DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFFB991EA5F32E002CB3DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADFFFBB11EA5F32E002CB3DC /* GLViewPagerViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFFBB21EA5F32E002CB3DC /* GLViewPagerViewControllerTests.m */,
+				ADFFFBB41EA5F32E002CB3DC /* Info.plist */,
+			);
+			path = GLViewPagerViewControllerTests;
+			sourceTree = "<group>";
+		};
+		ADFFFBBC1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFFBBD1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.m */,
+				ADFFFBBF1EA5F32E002CB3DC /* Info.plist */,
+			);
+			path = GLViewPagerViewControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADFFFB941EA5F32E002CB3DC /* GLViewPagerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFFFBC21EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewController" */;
+			buildPhases = (
+				ADFFFB911EA5F32E002CB3DC /* Sources */,
+				ADFFFB921EA5F32E002CB3DC /* Frameworks */,
+				ADFFFB931EA5F32E002CB3DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLViewPagerViewController;
+			productName = GLViewPagerViewController;
+			productReference = ADFFFB951EA5F32E002CB3DC /* GLViewPagerViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADFFFBAD1EA5F32E002CB3DC /* GLViewPagerViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFFFBC51EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerTests" */;
+			buildPhases = (
+				ADFFFBAA1EA5F32E002CB3DC /* Sources */,
+				ADFFFBAB1EA5F32E002CB3DC /* Frameworks */,
+				ADFFFBAC1EA5F32E002CB3DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFFFBB01EA5F32E002CB3DC /* PBXTargetDependency */,
+			);
+			name = GLViewPagerViewControllerTests;
+			productName = GLViewPagerViewControllerTests;
+			productReference = ADFFFBAE1EA5F32E002CB3DC /* GLViewPagerViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADFFFBB81EA5F32E002CB3DC /* GLViewPagerViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFFFBC81EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerUITests" */;
+			buildPhases = (
+				ADFFFBB51EA5F32E002CB3DC /* Sources */,
+				ADFFFBB61EA5F32E002CB3DC /* Frameworks */,
+				ADFFFBB71EA5F32E002CB3DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFFFBBB1EA5F32E002CB3DC /* PBXTargetDependency */,
+			);
+			name = GLViewPagerViewControllerUITests;
+			productName = GLViewPagerViewControllerUITests;
+			productReference = ADFFFBB91EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADFFFB8D1EA5F32E002CB3DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Yanci;
+				TargetAttributes = {
+					ADFFFB941EA5F32E002CB3DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 32URLK6K7Y;
+						ProvisioningStyle = Automatic;
+					};
+					ADFFFBAD1EA5F32E002CB3DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 32URLK6K7Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADFFFB941EA5F32E002CB3DC;
+					};
+					ADFFFBB81EA5F32E002CB3DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 32URLK6K7Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADFFFB941EA5F32E002CB3DC;
+					};
+				};
+			};
+			buildConfigurationList = ADFFFB901EA5F32E002CB3DC /* Build configuration list for PBXProject "GLViewPagerViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADFFFB8C1EA5F32E002CB3DC;
+			productRefGroup = ADFFFB961EA5F32E002CB3DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFFFB941EA5F32E002CB3DC /* GLViewPagerViewController */,
+				ADFFFBAD1EA5F32E002CB3DC /* GLViewPagerViewControllerTests */,
+				ADFFFBB81EA5F32E002CB3DC /* GLViewPagerViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADFFFB931EA5F32E002CB3DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFFBA81EA5F32E002CB3DC /* LaunchScreen.storyboard in Resources */,
+				ADFFFBA51EA5F32E002CB3DC /* Assets.xcassets in Resources */,
+				ADFFFBA31EA5F32E002CB3DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBAC1EA5F32E002CB3DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBB71EA5F32E002CB3DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADFFFB911EA5F32E002CB3DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFFBA01EA5F32E002CB3DC /* ViewController.m in Sources */,
+				ADFFFB9D1EA5F32E002CB3DC /* AppDelegate.m in Sources */,
+				ADFFFBD11EA5F366002CB3DC /* GLViewPagerViewController.m in Sources */,
+				ADFFFB9A1EA5F32E002CB3DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBAA1EA5F32E002CB3DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFFBB31EA5F32E002CB3DC /* GLViewPagerViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFFBB51EA5F32E002CB3DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFFBBE1EA5F32E002CB3DC /* GLViewPagerViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFFFBB01EA5F32E002CB3DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFFFB941EA5F32E002CB3DC /* GLViewPagerViewController */;
+			targetProxy = ADFFFBAF1EA5F32E002CB3DC /* PBXContainerItemProxy */;
+		};
+		ADFFFBBB1EA5F32E002CB3DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFFFB941EA5F32E002CB3DC /* GLViewPagerViewController */;
+			targetProxy = ADFFFBBA1EA5F32E002CB3DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADFFFBA11EA5F32E002CB3DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFFFBA21EA5F32E002CB3DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADFFFBA61EA5F32E002CB3DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFFFBA71EA5F32E002CB3DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADFFFBC01EA5F32E002CB3DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADFFFBC11EA5F32E002CB3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADFFFBC31EA5F32E002CB3DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADFFFBC41EA5F32E002CB3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADFFFBC61EA5F32E002CB3DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLViewPagerViewController.app/GLViewPagerViewController";
+			};
+			name = Debug;
+		};
+		ADFFFBC71EA5F32E002CB3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLViewPagerViewController.app/GLViewPagerViewController";
+			};
+			name = Release;
+		};
+		ADFFFBC91EA5F32E002CB3DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GLViewPagerViewController;
+			};
+			name = Debug;
+		};
+		ADFFFBCA1EA5F32E002CB3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				INFOPLIST_FILE = GLViewPagerViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GLViewPagerViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADFFFB901EA5F32E002CB3DC /* Build configuration list for PBXProject "GLViewPagerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFFBC01EA5F32E002CB3DC /* Debug */,
+				ADFFFBC11EA5F32E002CB3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFFFBC21EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFFBC31EA5F32E002CB3DC /* Debug */,
+				ADFFFBC41EA5F32E002CB3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADFFFBC51EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFFBC61EA5F32E002CB3DC /* Debug */,
+				ADFFFBC71EA5F32E002CB3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADFFFBC81EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFFBC91EA5F32E002CB3DC /* Debug */,
+				ADFFFBCA1EA5F32E002CB3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADFFFB8D1EA5F32E002CB3DC /* Project object */;
+}
