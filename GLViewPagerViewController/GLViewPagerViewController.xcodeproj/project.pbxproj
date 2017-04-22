@@ -212,8 +212,7 @@
 				TargetAttributes = {
 					ADFFFB941EA5F32E002CB3DC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 32URLK6K7Y;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					ADFFFBAD1EA5F32E002CB3DC = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -433,10 +432,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.GLViewPagerC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -445,10 +445,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.GLViewPagerC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -522,6 +523,7 @@
 				ADFFFBC41EA5F32E002CB3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADFFFBC51EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				ADFFFBC71EA5F32E002CB3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADFFFBC81EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +541,7 @@
 				ADFFFBCA1EA5F32E002CB3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

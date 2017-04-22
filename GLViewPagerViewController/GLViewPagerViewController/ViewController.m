@@ -8,6 +8,48 @@
 
 #import "ViewController.h"
 
+@interface GLPresentViewController : UIViewController
+
+- (id)initWithTitle:(NSString *)title;
+@end
+
+
+@interface GLPresentViewController()
+@property (nonatomic,strong)UILabel *presentLabel;
+@end
+
+@implementation GLPresentViewController {
+    NSString *_title;
+    BOOL _setupSubViews;
+}
+- (id)initWithTitle:(NSString *)title {
+    if (self = [super init]) {
+        _title = title;
+    }
+    return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.presentLabel.text = _title;
+    [self.presentLabel sizeToFit];
+    [self.view addSubview:self.presentLabel];
+    self.presentLabel.center = self.view.center;
+}
+
+- (void)viewWillLayoutSubviews {
+        self.presentLabel.center = self.view.center;
+}
+
+- (UILabel *)presentLabel {
+    if (!_presentLabel) {
+        _presentLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+    }
+    return _presentLabel;
+}
+
+@end
+
 @interface ViewController ()<GLViewPagerViewControllerDataSource,GLViewPagerViewControllerDelegate>
 @property (nonatomic,strong)NSArray *viewControllers;
 @property (nonatomic,strong)NSArray *tagTitles;
@@ -18,6 +60,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"Paged Tabs";
     // Do any additional setup after loading the view.
     self.dataSource = self;
     self.delegate = self;
@@ -32,33 +75,33 @@
     
     /** 设置内容视图 */
     self.viewControllers = @[
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
-                             [[UIViewController alloc]init],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page One"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Two"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Three"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Four"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Five"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Six"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Seven"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Eight"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Nine"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Ten"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Eleven"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Twelve"],
                              ];
     /** 设置标签标题 */
     self.tagTitles = @[
-                       @"tab1",
-                       @"tab2",
-                       @"tab3",
-                       @"tab4",
-                       @"tab5",
-                       @"tab6",
-                       @"tab7",
-                       @"tab8",
-                       @"tab9",
-                       @"tab1000",
-                       @"tab1001",
-                       @"tab1002"
+                       @"Page One",
+                       @"Page Two",
+                       @"Page Three",
+                       @"Page Four",
+                       @"Page Five",
+                       @"Page Six",
+                       @"Page Seven",
+                       @"Page Eight",
+                       @"Page Nine",
+                       @"Page Ten",
+                       @"Page Eleven",
+                       @"Page Twelve"
                        ];
 }
 
