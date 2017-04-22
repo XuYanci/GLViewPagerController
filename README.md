@@ -35,7 +35,6 @@ GLViewPagerController is not available through cocoapods now, you can clone the 
 To use the tabbed page view controller, simply create a `UIViewController` that is a subclass of `GLViewPagerViewController`. Then implement the following data source method:
 
 ```
-
 Here return the amount of the tabs 
 - (NSUInteger)numberOfTabsForViewPager:(GLViewPagerViewController *)viewPager;
 
