@@ -46,10 +46,10 @@ Here return the contentview of the viewpager at index
 
 - (UIViewController *)viewPager:(GLViewPagerViewController *)viewPager
 contentViewControllerForTabAtIndex:(NSUInteger)index;
-
+```
 
 ### Page View Controller Enhancements
-
+```
 Here you can get the tab index when swithing between tabs.
 - (void)viewPager:(GLViewPagerViewController *)viewPager didChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex;
 
@@ -60,7 +60,7 @@ Want to animate font or textcolor when switching tabs, you can use this delegate
 Here you can return the tab width at index, if not implement this interface, it use the default tabwidth value.
 
 - (CGFloat)viewPager:(GLViewPagerViewController *)viewPager widthForTabIndex:(NSUInteger)index;
-
+```
 ## Appearance
 
 /** 指示器颜色 */
