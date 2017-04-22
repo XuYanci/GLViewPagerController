@@ -37,17 +37,14 @@ To use the tabbed page view controller, simply create a `UIViewController` that 
 ```
 
 Here return the amount of the tabs 
-
 - (NSUInteger)numberOfTabsForViewPager:(GLViewPagerViewController *)viewPager;
 
 
 Here return the view of the tab at index
-
 - (UIView *)viewPager:(GLViewPagerViewController *)viewPager
       viewForTabIndex:(NSUInteger)index;
 
 Here return the contentview of the viewpager at index
-
 - (UIViewController *)viewPager:(GLViewPagerViewController *)viewPager
 contentViewControllerForTabAtIndex:(NSUInteger)index;
 ```
