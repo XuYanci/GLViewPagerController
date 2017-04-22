@@ -8,7 +8,7 @@ GLViewPagerViewController属于公用控件，常见于新闻资讯模块，这�
 GLViewPagerViewController is an common public control, it is usally used in news, here use UIPageViewController and UIScrollView as tab container to build it.
 
 <div style="width:100%;">
-<img src=".https://github.com/XuYanci/GLViewPagerController/blob/master/readme~resource/present_viewpager.gif" align="center" height="30%" width="30%" style="margin-left:20px;">
+<img src="https://github.com/XuYanci/GLViewPagerController/blob/master/readme~resource/present_viewpager.gif" align="center" height="30%" width="30%" style="margin-left:20px;">
 </div>
 
 <p><p>
