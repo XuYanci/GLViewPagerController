@@ -18,11 +18,15 @@ GLViewPagerViewController is an common public control, it is usally used in news
 
 To run the example project, clone the repo and build the project. Examples are available for Objective-C project.
 
+<p><p>
+
 ## Installation (安装)
 
 GLViewPagerController 暂时不支持cocoapods，你可以克隆仓库，然后添加GLViewPagerController.h GLViewPagerController.m到你的工程中，引入头文件来使用它。
 
 GLViewPagerController is not available through cocoapods now, you can clone the repo and add GLViewPagerController.h GLViewPagerController.m to you project, import the header and use it.
+
+<p><p>
 
 ## Usage
 
@@ -48,6 +52,8 @@ Here return the contentview of the viewpager at index
 contentViewControllerForTabAtIndex:(NSUInteger)index;
 ```
 
+<p><p>
+
 ### Page View Controller Enhancements
 ```
 Here you can get the tab index when swithing between tabs.
@@ -61,6 +67,9 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 - (CGFloat)viewPager:(GLViewPagerViewController *)viewPager widthForTabIndex:(NSUInteger)index;
 ```
+
+<p><p>
+
 ## Appearance
 
 /** 指示器颜色 */
@@ -115,9 +124,12 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 @property (nonatomic,assign)GLTabAnimationType tabAnimationType;
 
+<p><p>
 
 ## Requirements
 Supports iOS 8 and above.
+
+<p><p>
 
 ## Author
 Xu Yanci
