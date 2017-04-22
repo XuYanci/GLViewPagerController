@@ -71,55 +71,59 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 ## Appearance
 
-/** 指示器颜色 */
-
 @property (nonatomic,strong)UIColor *indicatorColor;
 
-/** 固定标签宽度 */
+When fixtabWidth is true, it use tabWidth as default value, if fixtabWidth is false, it will adjust its width for its content size.
 
 @property (nonatomic,assign)BOOL fixTabWidth;
 
-/** 标签宽度 */
+The default tabWidth value when fixtabWidth is true.
 
 @property (nonatomic,assign)CGFloat tabWidth;
 
-/** 标签高度 */
+The default tabHeight 
 
 @property (nonatomic,assign)CGFloat tabHeight;
 
-/** 指示器高度 */
+The indicator height
 
 @property (nonatomic,assign)CGFloat indicatorHeight;
 
-/** 指示器宽度 */
+The indicator width when fixIndicatorWidth is true
 
 @property (nonatomic,assign)CGFloat indicatorWidth;
 
-/** 固定指示器宽度*/
+When fixIndicatorWidth is true, it use indicatorWidth as default value, if fixIndicatorWidth is false, it will adjust its width for tab content size.
 
 @property (nonatomic,assign)BOOL fixIndicatorWidth;
 
-/** 标签之间间距 */
+The padding between tabs
 
 @property (nonatomic,assign)CGFloat padding;
 
-/** 标签第一个元素离左边多少Point */
+The leadingPadding for the first tab
 
 @property (nonatomic,assign)CGFloat leadingPadding;
 
-/** 标签最后一个元素离右边多少Point */
+The trailingPadding for the last tab 
 
 @property (nonatomic,assign)CGFloat trailingPadding;
 
-/** 默认显示第一页 (一般是0) */
+The default display page index when first display 
 
 @property (nonatomic,assign)NSUInteger defaultDisplayPageIndex;
 
-/** 标签动画时长 */
+The tab animation duration 
 
 @property (nonatomic,assign)CGFloat animationTabDuration;
 
-/** 标签动画类型 */
+The tabAnimation type,list belows:
+
+GLTabAnimationType_none, it means no animation
+
+GLTabAnimationType_whileScrolling, animate while scrolling tab
+
+GLTabAnimationType_end, animation when finish scrolling tab
 
 @property (nonatomic,assign)GLTabAnimationType tabAnimationType;
 
