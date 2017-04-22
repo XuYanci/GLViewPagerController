@@ -64,42 +64,55 @@ Here you can return the tab width at index, if not implement this interface, it 
 ## Appearance
 
 /** 指示器颜色 */
+
 @property (nonatomic,strong)UIColor *indicatorColor;
 
 /** 固定标签宽度 */
+
 @property (nonatomic,assign)BOOL fixTabWidth;
 
 /** 标签宽度 */
+
 @property (nonatomic,assign)CGFloat tabWidth;
 
 /** 标签高度 */
+
 @property (nonatomic,assign)CGFloat tabHeight;
 
 /** 指示器高度 */
+
 @property (nonatomic,assign)CGFloat indicatorHeight;
 
 /** 指示器宽度 */
+
 @property (nonatomic,assign)CGFloat indicatorWidth;
 
 /** 固定指示器宽度*/
+
 @property (nonatomic,assign)BOOL fixIndicatorWidth;
 
 /** 标签之间间距 */
+
 @property (nonatomic,assign)CGFloat padding;
 
 /** 标签第一个元素离左边多少Point */
+
 @property (nonatomic,assign)CGFloat leadingPadding;
 
 /** 标签最后一个元素离右边多少Point */
+
 @property (nonatomic,assign)CGFloat trailingPadding;
 
 /** 默认显示第一页 (一般是0) */
+
 @property (nonatomic,assign)NSUInteger defaultDisplayPageIndex;
 
 /** 标签动画时长 */
+
 @property (nonatomic,assign)CGFloat animationTabDuration;
 
 /** 标签动画类型 */
+
 @property (nonatomic,assign)GLTabAnimationType tabAnimationType;
 
 
