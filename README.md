@@ -22,9 +22,9 @@ To run the example project, clone the repo and build the project. Examples are a
 
 ## Installation (安装)
 
-GLViewPagerController 暂时不支持cocoapods，你可以克隆仓库，然后添加GLViewPagerController.h GLViewPagerController.m到你的工程中，引入头文件来使用它。
+GLViewPagerController 暂时不支持cocoapods，你可以克隆仓库，然后添加`GLViewPagerController.h` `GLViewPagerController.m`到你的工程中，引入头文件来使用它。
 
-GLViewPagerController is not available through cocoapods now, you can clone the repo and add GLViewPagerController.h GLViewPagerController.m to you project, import the header and use it.
+GLViewPagerController is not available through cocoapods now, you can clone the repo and add `GLViewPagerController.h` `GLViewPagerController.m` to you project, import the header and use it.
 
 <p><p>
 
@@ -37,7 +37,6 @@ To use the tabbed page view controller, simply create a `UIViewController` that 
 ```
 Here return the amount of the tabs 
 - (NSUInteger)numberOfTabsForViewPager:(GLViewPagerViewController *)viewPager;
-
 
 Here return the view of the tab at index
 - (UIView *)viewPager:(GLViewPagerViewController *)viewPager
@@ -54,7 +53,6 @@ contentViewControllerForTabAtIndex:(NSUInteger)index;
 ```
 Here you can get the tab index when swithing between tabs.
 - (void)viewPager:(GLViewPagerViewController *)viewPager didChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex;
-
 
 Want to animate font or textcolor when switching tabs, you can use this delegate method, the progress value range from 0.0 to 1.0.
 - (void)viewPager:(GLViewPagerViewController *)viewPager willChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex withTransitionProgress:(CGFloat)progress;
@@ -92,12 +90,11 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 -`tabAnimationType` - The tabAnimation type,list belows:
 
-GLTabAnimationType_none, it means no animation
+`GLTabAnimationType_none`, it means no animation
 
-GLTabAnimationType_whileScrolling, animate while scrolling tab
+`GLTabAnimationType_whileScrolling`, animate while scrolling tab
 
-GLTabAnimationType_end, animation when finish scrolling tab
-
+`GLTabAnimationType_end`, animation when finish scrolling tab
 
 <p><p>
 
@@ -109,4 +106,4 @@ Supports iOS 8 and above.
 ## Author
 Xu Yanci
 
-Mail: [randy.wind](mailto:grandy.wind@gmail.com)
+Mail: [XuYanci](mailto:grandy.wind@gmail.com)
