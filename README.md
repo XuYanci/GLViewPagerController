@@ -66,54 +66,31 @@ Here you can return the tab width at index, if not implement this interface, it 
 <p><p>
 
 ## Appearance
+-`indicatorColor` - The indicator color
 
-@property (nonatomic,strong)UIColor *indicatorColor;
+-`fixTabWidth` - When fixtabWidth is true, it use tabWidth as default value, if fixtabWidth is false, it will adjust its width for its content size.
+ 
+-`tabWidth` - The default tabWidth value when fixtabWidth is true.
+ 
+-`tabHeight` - The default tabHeight 
+ 
+-`indicatorHeight` - The indicator height
 
-When fixtabWidth is true, it use tabWidth as default value, if fixtabWidth is false, it will adjust its width for its content size.
+-`indicatorWidth` - The indicator width when fixIndicatorWidth is true
+ 
+-`fixIndicatorWidth` - When fixIndicatorWidth is true, it use indicatorWidth as default value, if fixIndicatorWidth is false, it will adjust its width for tab content size.
 
-@property (nonatomic,assign)BOOL fixTabWidth;
+-`padding` - The padding between tabs
+ 
+-`leadingPadding` - The leadingPadding for the first tab
+ 
+-`trailingPadding` - The trailingPadding for the last tab
 
-The default tabWidth value when fixtabWidth is true.
+-`defaultDisplayPageIndex` - The default display page index when first display 
 
-@property (nonatomic,assign)CGFloat tabWidth;
+-`animationTabDuration` - The tab animation duration
 
-The default tabHeight 
-
-@property (nonatomic,assign)CGFloat tabHeight;
-
-The indicator height
-
-@property (nonatomic,assign)CGFloat indicatorHeight;
-
-The indicator width when fixIndicatorWidth is true
-
-@property (nonatomic,assign)CGFloat indicatorWidth;
-
-When fixIndicatorWidth is true, it use indicatorWidth as default value, if fixIndicatorWidth is false, it will adjust its width for tab content size.
-
-@property (nonatomic,assign)BOOL fixIndicatorWidth;
-
-The padding between tabs
-
-@property (nonatomic,assign)CGFloat padding;
-
-The leadingPadding for the first tab
-
-@property (nonatomic,assign)CGFloat leadingPadding;
-
-The trailingPadding for the last tab 
-
-@property (nonatomic,assign)CGFloat trailingPadding;
-
-The default display page index when first display 
-
-@property (nonatomic,assign)NSUInteger defaultDisplayPageIndex;
-
-The tab animation duration 
-
-@property (nonatomic,assign)CGFloat animationTabDuration;
-
-The tabAnimation type,list belows:
+-`tabAnimationType` - The tabAnimation type,list belows:
 
 GLTabAnimationType_none, it means no animation
 
@@ -121,7 +98,6 @@ GLTabAnimationType_whileScrolling, animate while scrolling tab
 
 GLTabAnimationType_end, animation when finish scrolling tab
 
-@property (nonatomic,assign)GLTabAnimationType tabAnimationType;
 
 <p><p>
 
