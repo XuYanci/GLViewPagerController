@@ -23,6 +23,12 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
+    GLIndicatorType_Rect,
+    GLIndicatorType_Line,
+    GLIndicatorType_Default = GLIndicatorType_Line,
+} GLIndicatorType;
+
+typedef enum : NSUInteger {
     GLTabAnimationType_none,    /** 无动画 */
     GLTabAnimationType_whileScrolling, /** 滑动时动画 */
     GLTabAnimationType_end,         /** 结束时动画 */
