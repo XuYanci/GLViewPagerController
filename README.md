@@ -64,7 +64,6 @@ Want to animate font or textcolor when switching tabs, you can use this delegate
 - (void)viewPager:(GLViewPagerViewController *)viewPager willChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex withTransitionProgress:(CGFloat)progress;
 
 Here you can return the tab width at index, if not implement this interface, it use the default tabwidth value.
-
 - (CGFloat)viewPager:(GLViewPagerViewController *)viewPager widthForTabIndex:(NSUInteger)index;
 ```
 
