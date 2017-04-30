@@ -490,8 +490,13 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 - (void)_setActivePageIndex:(NSUInteger)pageIndex {
     NSAssert(pageIndex <= self.contentViewControllers.count - 1, @"Default display page index is bigger than amount of  view controller");
    
+    UIPageViewControllerNavigationDirection direction = UIPageViewControllerNavigationDirectionReverse;
+    if (pageIndex > _currentPageIndex) {
+        direction = UIPageViewControllerNavigationDirectionForward;
+    }
+    
     [self.pageViewController setViewControllers:@[self.contentViewControllers[pageIndex]]
-                                      direction:UIPageViewControllerNavigationDirectionForward | UIPageViewControllerNavigationDirectionReverse
+                                      direction:direction
                                        animated:YES
                                      completion:^(BOOL finished) {
                                         
