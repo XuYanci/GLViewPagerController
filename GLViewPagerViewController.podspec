@@ -26,11 +26,11 @@ GLViewPagerViewController is an common public control, it is usally used in news
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '8.0'
   # @note 第一步生成的目录,用于存放Lib源文件 (.h,.m)
-  s.source_files = 'PodGLViewPagerViewController/Classes/**/*'
+  s.source_files = 'GLViewPagerViewController/Classes/**/*'
   # @note 第一步生成的目录,用于存放Lib资源文件 (.png)
-  s.resource_bundles = {
-     'PodGLViewPagerViewController' => ['GLViewPagerViewController/Assets/*.png']
-   }
+  #s.resource_bundles = {
+  #   'GLViewPagerViewController' => ['GLViewPagerViewController/Assets/*.png']
+  # }
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

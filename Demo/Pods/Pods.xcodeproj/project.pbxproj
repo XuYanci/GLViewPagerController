@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6943DC283A6D9AE762B182E6EAE05F /* GLViewPagerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBFABB539109C59C810DA8A5848E46 /* GLViewPagerViewController-dummy.m */; };
+		15732ECEA1AD01E0D1C947169D2D2EAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		59281F3BD0F085FCD8AFB1EC490958FC /* Pods-GLViewPagerViewControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844B7286F5473D12D58CD8C0C30510 /* Pods-GLViewPagerViewControllerTests-dummy.m */; };
+		85EBAF59C7BD89D2CA8F779713B48656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		863E8F1C4C075AE810908CF87398C8D7 /* GLViewPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F6C52FC245FE5E5E103C51AEFDD3D /* GLViewPagerViewController.m */; };
+		8D71811305AD43D7D21734366AEA463D /* GLViewPagerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF0DBE9E64BF8CF0CC72165101F0EA0 /* GLViewPagerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0717A4AEE84EB9348D0A6E50FAD3F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F3021B5EB13E7CF6ABBE69998EC8B95D /* Pods-GLViewPagerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2BED46FC9FE33EFF48F310C6129DD /* Pods-GLViewPagerViewController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3163E0605CA29248E60636929E82CA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED603FF37247C7E31D9F3EC99BF2B9F;
+			remoteInfo = GLViewPagerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DE2BED46FC9FE33EFF48F310C6129DD /* Pods-GLViewPagerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GLViewPagerViewController-dummy.m"; sourceTree = "<group>"; };
+		3643EA77AC9A7995A6EB47DBD09D6157 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLViewPagerViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A20D3D421ABE507B56CF626AA0C09F4 /* Pods-GLViewPagerViewControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GLViewPagerViewControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		624DA8239B9DCDBF31381E6A6535ED11 /* Pods-GLViewPagerViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GLViewPagerViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65EBFABB539109C59C810DA8A5848E46 /* GLViewPagerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLViewPagerViewController-dummy.m"; sourceTree = "<group>"; };
+		6E1D3C54EB02FECBC8A3F3EFFCE6704B /* Pods-GLViewPagerViewControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLViewPagerViewControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		7279AFE2D373425C114BE3916B428AF2 /* GLViewPagerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLViewPagerViewController.xcconfig; sourceTree = "<group>"; };
+		8DF28981E45E63F557656F0928A4C5E1 /* Pods-GLViewPagerViewControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GLViewPagerViewControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97F1C6360754EC567112B541369CE185 /* libPods-GLViewPagerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GLViewPagerViewController.a"; path = "libPods-GLViewPagerViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E844B7286F5473D12D58CD8C0C30510 /* Pods-GLViewPagerViewControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GLViewPagerViewControllerTests-dummy.m"; sourceTree = "<group>"; };
+		AAF0DBE9E64BF8CF0CC72165101F0EA0 /* GLViewPagerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLViewPagerViewController.h; sourceTree = "<group>"; };
+		AC501DA83AE8431EAED888B8EC677C05 /* GLViewPagerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLViewPagerViewController-prefix.pch"; sourceTree = "<group>"; };
+		ADF7D71F9DB066E5B313C19FC7EFD769 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLViewPagerViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF46339999C900F7273E19C54527D956 /* Pods-GLViewPagerViewController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLViewPagerViewController-frameworks.sh"; sourceTree = "<group>"; };
+		C019356CA291AA401D113AF2B632389A /* Pods-GLViewPagerViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GLViewPagerViewController-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D02F6C52FC245FE5E5E103C51AEFDD3D /* GLViewPagerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLViewPagerViewController.m; sourceTree = "<group>"; };
+		D473F4196186B091F0567EBDA572893A /* Pods-GLViewPagerViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLViewPagerViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		EC7794ACCA510EE3D8E9348E96DA35A5 /* libGLViewPagerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGLViewPagerViewController.a; path = libGLViewPagerViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2218FE2C25CCD4CE0B2983736FACE32 /* Pods-GLViewPagerViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLViewPagerViewController-resources.sh"; sourceTree = "<group>"; };
+		F630D6D4FE613C6C08586E3AC60486AB /* libPods-GLViewPagerViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GLViewPagerViewControllerTests.a"; path = "libPods-GLViewPagerViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB21BF4E207C6407D7F88408F1DCBFAA /* Pods-GLViewPagerViewControllerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLViewPagerViewControllerTests-resources.sh"; sourceTree = "<group>"; };
+		FD4E08B71010DF744A1F2EA5DF3BA6E8 /* Pods-GLViewPagerViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLViewPagerViewController.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F88F93694C9D7D8B5334D13EBD9BDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EBAF59C7BD89D2CA8F779713B48656 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54EB1EBD2991B36E84DF86B0B29C47EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15732ECEA1AD01E0D1C947169D2D2EAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933C886D12D12DFCD058FC0411ECA6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0717A4AEE84EB9348D0A6E50FAD3F2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077D13A9FBF9230123DC3BE3AEA1C5E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7279AFE2D373425C114BE3916B428AF2 /* GLViewPagerViewController.xcconfig */,
+				65EBFABB539109C59C810DA8A5848E46 /* GLViewPagerViewController-dummy.m */,
+				AC501DA83AE8431EAED888B8EC677C05 /* GLViewPagerViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/GLViewPagerViewController";
+			sourceTree = "<group>";
+		};
+		55AEB4EB2E91F7DEEC52F66101B34D0E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E0C81ACE33C755CFB759CECB27E880 /* Pods-GLViewPagerViewController */,
+				5A8CE20BA963EE010B003B0D06C2493B /* Pods-GLViewPagerViewControllerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A8CE20BA963EE010B003B0D06C2493B /* Pods-GLViewPagerViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DF28981E45E63F557656F0928A4C5E1 /* Pods-GLViewPagerViewControllerTests-acknowledgements.markdown */,
+				3A20D3D421ABE507B56CF626AA0C09F4 /* Pods-GLViewPagerViewControllerTests-acknowledgements.plist */,
+				9E844B7286F5473D12D58CD8C0C30510 /* Pods-GLViewPagerViewControllerTests-dummy.m */,
+				6E1D3C54EB02FECBC8A3F3EFFCE6704B /* Pods-GLViewPagerViewControllerTests-frameworks.sh */,
+				FB21BF4E207C6407D7F88408F1DCBFAA /* Pods-GLViewPagerViewControllerTests-resources.sh */,
+				3643EA77AC9A7995A6EB47DBD09D6157 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */,
+				ADF7D71F9DB066E5B313C19FC7EFD769 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */,
+			);
+			name = "Pods-GLViewPagerViewControllerTests";
+			path = "Target Support Files/Pods-GLViewPagerViewControllerTests";
+			sourceTree = "<group>";
+		};
+		60000CC3A3F6D85F2E51B9310E4201F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7794ACCA510EE3D8E9348E96DA35A5 /* libGLViewPagerViewController.a */,
+				97F1C6360754EC567112B541369CE185 /* libPods-GLViewPagerViewController.a */,
+				F630D6D4FE613C6C08586E3AC60486AB /* libPods-GLViewPagerViewControllerTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7BA10C8A500FFC89891A7747E0819ABB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B3BF90DAC47D51473456AB1D59A5F /* GLViewPagerViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7BA10C8A500FFC89891A7747E0819ABB /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				60000CC3A3F6D85F2E51B9310E4201F8 /* Products */,
+				55AEB4EB2E91F7DEEC52F66101B34D0E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80E0C81ACE33C755CFB759CECB27E880 /* Pods-GLViewPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				624DA8239B9DCDBF31381E6A6535ED11 /* Pods-GLViewPagerViewController-acknowledgements.markdown */,
+				C019356CA291AA401D113AF2B632389A /* Pods-GLViewPagerViewController-acknowledgements.plist */,
+				2DE2BED46FC9FE33EFF48F310C6129DD /* Pods-GLViewPagerViewController-dummy.m */,
+				AF46339999C900F7273E19C54527D956 /* Pods-GLViewPagerViewController-frameworks.sh */,
+				F2218FE2C25CCD4CE0B2983736FACE32 /* Pods-GLViewPagerViewController-resources.sh */,
+				D473F4196186B091F0567EBDA572893A /* Pods-GLViewPagerViewController.debug.xcconfig */,
+				FD4E08B71010DF744A1F2EA5DF3BA6E8 /* Pods-GLViewPagerViewController.release.xcconfig */,
+			);
+			name = "Pods-GLViewPagerViewController";
+			path = "Target Support Files/Pods-GLViewPagerViewController";
+			sourceTree = "<group>";
+		};
+		8EB9420BAA3F5E63ABD71EE19C5D9A83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0DBE9E64BF8CF0CC72165101F0EA0 /* GLViewPagerViewController.h */,
+				D02F6C52FC245FE5E5E103C51AEFDD3D /* GLViewPagerViewController.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9A4B3BF90DAC47D51473456AB1D59A5F /* GLViewPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D726FC31BFA8C05DFF019AAF4C4A80 /* GLViewPagerViewController */,
+				077D13A9FBF9230123DC3BE3AEA1C5E9 /* Support Files */,
+			);
+			name = GLViewPagerViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D726FC31BFA8C05DFF019AAF4C4A80 /* GLViewPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8EB9420BAA3F5E63ABD71EE19C5D9A83 /* Classes */,
+			);
+			name = GLViewPagerViewController;
+			path = GLViewPagerViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C254DE6F17724A693E5CBBBF714F7A4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D71811305AD43D7D21734366AEA463D /* GLViewPagerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		66D34CF11B3AB9595E7BF3868CDAD83E /* Pods-GLViewPagerViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F5228A4AC35F58B9F1E7B7B5A3B44CD /* Build configuration list for PBXNativeTarget "Pods-GLViewPagerViewControllerTests" */;
+			buildPhases = (
+				1F4ADCC17BED4D4B5FCDD53B3235BF2A /* Sources */,
+				933C886D12D12DFCD058FC0411ECA6CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GLViewPagerViewControllerTests";
+			productName = "Pods-GLViewPagerViewControllerTests";
+			productReference = F630D6D4FE613C6C08586E3AC60486AB /* libPods-GLViewPagerViewControllerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B55212E5B5CB784B7B5FB053A2893A3F /* Pods-GLViewPagerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E14DDAD989471CD131FFBADFCA44BD2 /* Build configuration list for PBXNativeTarget "Pods-GLViewPagerViewController" */;
+			buildPhases = (
+				1F4CE49821751E3EEC1109D2090F1C33 /* Sources */,
+				4F88F93694C9D7D8B5334D13EBD9BDFF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC2BE6EF6127DC0B29D8DA21A8FD23AA /* PBXTargetDependency */,
+			);
+			name = "Pods-GLViewPagerViewController";
+			productName = "Pods-GLViewPagerViewController";
+			productReference = 97F1C6360754EC567112B541369CE185 /* libPods-GLViewPagerViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CED603FF37247C7E31D9F3EC99BF2B9F /* GLViewPagerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A31A6206508FC39B922A3E033957D72 /* Build configuration list for PBXNativeTarget "GLViewPagerViewController" */;
+			buildPhases = (
+				178080600FEF394417386C22A294BCBB /* Sources */,
+				54EB1EBD2991B36E84DF86B0B29C47EB /* Frameworks */,
+				C254DE6F17724A693E5CBBBF714F7A4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLViewPagerViewController;
+			productName = GLViewPagerViewController;
+			productReference = EC7794ACCA510EE3D8E9348E96DA35A5 /* libGLViewPagerViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 60000CC3A3F6D85F2E51B9310E4201F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED603FF37247C7E31D9F3EC99BF2B9F /* GLViewPagerViewController */,
+				B55212E5B5CB784B7B5FB053A2893A3F /* Pods-GLViewPagerViewController */,
+				66D34CF11B3AB9595E7BF3868CDAD83E /* Pods-GLViewPagerViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178080600FEF394417386C22A294BCBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6943DC283A6D9AE762B182E6EAE05F /* GLViewPagerViewController-dummy.m in Sources */,
+				863E8F1C4C075AE810908CF87398C8D7 /* GLViewPagerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4ADCC17BED4D4B5FCDD53B3235BF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59281F3BD0F085FCD8AFB1EC490958FC /* Pods-GLViewPagerViewControllerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4CE49821751E3EEC1109D2090F1C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3021B5EB13E7CF6ABBE69998EC8B95D /* Pods-GLViewPagerViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC2BE6EF6127DC0B29D8DA21A8FD23AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GLViewPagerViewController;
+			target = CED603FF37247C7E31D9F3EC99BF2B9F /* GLViewPagerViewController */;
+			targetProxy = 3163E0605CA29248E60636929E82CA78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D2CBBE3D178281621353D055B158523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF7D71F9DB066E5B313C19FC7EFD769 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		907DDAFADCA0A80B9E8D894585061BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3643EA77AC9A7995A6EB47DBD09D6157 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		981568D888ADBC305F4F51A749D945C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D473F4196186B091F0567EBDA572893A /* Pods-GLViewPagerViewController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0951B4EB85FA51A811634C697A4DCAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4E08B71010DF744A1F2EA5DF3BA6E8 /* Pods-GLViewPagerViewController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA20E01FE7C6CB7EA024FB0AACA617BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7279AFE2D373425C114BE3916B428AF2 /* GLViewPagerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GLViewPagerViewController/GLViewPagerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E6208DE8239963601D0F21B739C9FE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7279AFE2D373425C114BE3916B428AF2 /* GLViewPagerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GLViewPagerViewController/GLViewPagerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A31A6206508FC39B922A3E033957D72 /* Build configuration list for PBXNativeTarget "GLViewPagerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA20E01FE7C6CB7EA024FB0AACA617BF /* Debug */,
+				E6208DE8239963601D0F21B739C9FE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F5228A4AC35F58B9F1E7B7B5A3B44CD /* Build configuration list for PBXNativeTarget "Pods-GLViewPagerViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907DDAFADCA0A80B9E8D894585061BA8 /* Debug */,
+				6D2CBBE3D178281621353D055B158523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E14DDAD989471CD131FFBADFCA44BD2 /* Build configuration list for PBXNativeTarget "Pods-GLViewPagerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981568D888ADBC305F4F51A749D945C8 /* Debug */,
+				B0951B4EB85FA51A811634C697A4DCAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
