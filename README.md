@@ -22,10 +22,14 @@ To run the example project, clone the repo and build the project. Examples are a
 
 ## Installation (安装)
 
-GLViewPagerController 暂时不支持cocoapods，你可以克隆仓库，然后添加`GLViewPagerController.h` `GLViewPagerController.m`到你的工程中，引入头文件来使用它。
+GLViewPagerController 支持cocoapods，你可以这样来使用
 
-GLViewPagerController is not available through cocoapods now, you can clone the repo and add `GLViewPagerController.h` `GLViewPagerController.m` to you project, import the header and use it.
+GLViewPagerController support cocoapods now, you can use it by 
 
+```
+'pod 'GLViewPagerViewController', '~> 1.0.0'
+
+```
 <p><p>
 
 ## Usage
