@@ -32,6 +32,7 @@ GLViewPagerController is not available through cocoapods now, you can clone the 
 
 使用标签分页控件，你需要创建一个`UIViewController`作为`GLViewPagerViewController`的子类，然后实现下面的数据源接口:
 
+
 To use the tabbed page view controller, simply create a `UIViewController` that is a subclass of `GLViewPagerViewController`. Then implement the following data source method:
 
 ```
