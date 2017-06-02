@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 GLViewPagerViewController is an common public control, it is usally used in news, here use UIPageViewController and UIScrollView as tab container to build it.
                        DESC
-  s.homepage         = 'https://github.com/XuYanci/GLViewPagerController.git' ()
-   s.screenshots     = 'https://github.com/XuYanci/GLViewPagerController/blob/master/readme%7Eresource/present_viewpager.gif'
+  s.homepage         = 'https://github.com/XuYanci/GLViewPagerController.git'
+  s.screenshots     = 'https://github.com/XuYanci/GLViewPagerController/blob/master/readme%7Eresource/present_viewpager.gif',
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'XuYanci' => 'grandy.wind@gmail.com' }
   # @note 第一步生成gitrepo地址
@@ -29,7 +29,7 @@ GLViewPagerViewController is an common public control, it is usally used in news
   s.source_files = 'PodGLViewPagerViewController/Classes/**/*'
   # @note 第一步生成的目录,用于存放Lib资源文件 (.png)
   s.resource_bundles = {
-     'PodGLViewPagerViewController' => ['PodGLViewPagerViewController/Assets/*.png']
+     'PodGLViewPagerViewController' => ['GLViewPagerViewController/Assets/*.png']
    }
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
