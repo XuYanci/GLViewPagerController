@@ -66,12 +66,28 @@
     self.delegate = self;
     self.fixTabWidth = NO;
     self.padding = 10;
-    self.leadingPadding = 10;
-    self.trailingPadding = 10;
+    self.leadingPadding = 30;
+    self.trailingPadding = 30;
     self.defaultDisplayPageIndex = 0;
     self.tabAnimationType = GLTabAnimationType_whileScrolling;
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
+    self.supportArabic = NO;
     
+    //Test Case1
+//    self.fixTabWidth = NO;
+//    self.supportArabic = NO;
+    
+    //Test case2
+//    self.fixTabWidth = NO;
+//    self.supportArabic = YES;
+//
+    // Test case3
+//    self.fixTabWidth = YES;
+//    self.supportArabic = YES;
+//
+    // Test case4
+//    self.fixTabWidth = YES;
+//    self.supportArabic = NO;
     
     /** 设置内容视图 */
     self.viewControllers = @[
@@ -93,13 +109,13 @@
                        @"Page One",
                        @"Page Two",
                        @"Page Three",
-                       @"Page Four",
-                       @"Page Five",
+                       @"Page Four Four Four",
+                       @"Five",
                        @"Page Six",
                        @"Page Seven",
-                       @"Page Eight",
+                       @"Eight",
                        @"Page Nine",
-                       @"Page Ten",
+                       @"Page Ten Ten Ten",
                        @"Page Eleven",
                        @"Page Twelve"
                        ];
@@ -126,6 +142,7 @@
     label.textColor = [UIColor colorWithWhite:0.0 alpha:0.5];
     label.textAlignment = NSTextAlignmentCenter;
     label.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
+ 
     return label;
 }
 

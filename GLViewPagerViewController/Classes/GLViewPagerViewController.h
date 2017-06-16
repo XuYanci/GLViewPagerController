@@ -134,6 +134,9 @@ contentViewControllerForTabAtIndex:(NSUInteger)index;
 @property (nonatomic,assign)CGFloat animationTabDuration;
 /** 标签动画类型 */
 @property (nonatomic,assign)GLTabAnimationType tabAnimationType;
+/** 支持阿拉伯 when ture, all layout will reverse*/
+@property (nonatomic,assign)BOOL supportArabic;
+
 
 /** 重新加载数据,会调用DataSource方法并重新构建视图 */
 - (void)reloadData;
