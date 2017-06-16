@@ -91,13 +91,13 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 -`tabAnimationType` - The tabAnimation type,list belows:
 
-`GLTabAnimationType_none`, it means no animation
+-`GLTabAnimationType_none` - it means no animation
 
-`GLTabAnimationType_whileScrolling`, animate while scrolling tab
+-`GLTabAnimationType_whileScrolling` - animate while scrolling tab
 
-`GLTabAnimationType_end`, animation when finish scrolling tab
+-`GLTabAnimationType_end` - animation when finish scrolling tab
 
-`supportArabic`, When supportArabic is true, layout will be reverse, default is false
+-`supportArabic` - When supportArabic is true, layout will be reverse, default is false
 
 <p><p>
 
