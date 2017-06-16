@@ -97,6 +97,8 @@ Here you can return the tab width at index, if not implement this interface, it 
 
 `GLTabAnimationType_end`, animation when finish scrolling tab
 
+`supportArabic`, When supportArabic is true, layout will be reverse, default is false
+
 <p><p>
 
 ## Requirements
