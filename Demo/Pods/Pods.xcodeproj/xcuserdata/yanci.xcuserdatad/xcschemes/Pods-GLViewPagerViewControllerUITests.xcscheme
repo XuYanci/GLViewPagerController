@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '66D34CF11B3AB9595E7BF3868CDAD83E'
-               BlueprintName = 'Pods-GLViewPagerViewControllerTests'
+               BlueprintIdentifier = '2502F46A3933C6EADE9BA72329624725'
+               BlueprintName = 'Pods-GLViewPagerViewControllerUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-GLViewPagerViewControllerTests.a'>
+               BuildableName = 'libPods-GLViewPagerViewControllerUITests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

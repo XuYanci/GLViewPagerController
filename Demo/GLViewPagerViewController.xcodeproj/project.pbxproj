@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5999C1F71D6400EECA12FFA7 /* libPods-GLViewPagerViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FDFF82E81893906BABAE6C /* libPods-GLViewPagerViewControllerTests.a */; };
+		1D4FCB71AD0CD96200CFBFD0 /* libPods-GLViewPagerViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E60999DBB9EFA6797D2B7CA /* libPods-GLViewPagerViewControllerUITests.a */; };
 		ADFFFB9A1EA5F32E002CB3DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB991EA5F32E002CB3DC /* main.m */; };
 		ADFFFB9D1EA5F32E002CB3DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB9C1EA5F32E002CB3DC /* AppDelegate.m */; };
 		ADFFFBA01EA5F32E002CB3DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFFFB9F1EA5F32E002CB3DC /* ViewController.m */; };
@@ -37,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A3AFF0AAAB1E02964340011 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLViewPagerViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLViewPagerViewControllerTests/Pods-GLViewPagerViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
-		6FD60DDD93453EB753AB7C43 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLViewPagerViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLViewPagerViewControllerTests/Pods-GLViewPagerViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0004BE5950085B449912BFB5 /* Pods-GLViewPagerViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLViewPagerViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLViewPagerViewControllerUITests/Pods-GLViewPagerViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		291283C06601E6D83BDEF0AD /* Pods-GLViewPagerViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLViewPagerViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLViewPagerViewControllerUITests/Pods-GLViewPagerViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77FDFF82E81893906BABAE6C /* libPods-GLViewPagerViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLViewPagerViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E60999DBB9EFA6797D2B7CA /* libPods-GLViewPagerViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLViewPagerViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AC78BA088EC9666BC10625 /* Pods-GLViewPagerViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLViewPagerViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLViewPagerViewController/Pods-GLViewPagerViewController.release.xcconfig"; sourceTree = "<group>"; };
 		A329140ED4E30A2B49D2AB89 /* libPods-GLViewPagerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLViewPagerViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFFFB951EA5F32E002CB3DC /* GLViewPagerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLViewPagerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5999C1F71D6400EECA12FFA7 /* libPods-GLViewPagerViewControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4FCB71AD0CD96200CFBFD0 /* libPods-GLViewPagerViewControllerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +94,7 @@
 			children = (
 				A329140ED4E30A2B49D2AB89 /* libPods-GLViewPagerViewController.a */,
 				77FDFF82E81893906BABAE6C /* libPods-GLViewPagerViewControllerTests.a */,
+				7E60999DBB9EFA6797D2B7CA /* libPods-GLViewPagerViewControllerUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,8 +168,8 @@
 			children = (
 				D3CC35707BA65B87F21C8065 /* Pods-GLViewPagerViewController.debug.xcconfig */,
 				95AC78BA088EC9666BC10625 /* Pods-GLViewPagerViewController.release.xcconfig */,
-				6FD60DDD93453EB753AB7C43 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */,
-				0A3AFF0AAAB1E02964340011 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */,
+				291283C06601E6D83BDEF0AD /* Pods-GLViewPagerViewControllerUITests.debug.xcconfig */,
+				0004BE5950085B449912BFB5 /* Pods-GLViewPagerViewControllerUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -199,12 +201,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADFFFBC51EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerTests" */;
 			buildPhases = (
-				553DEFAD5E8DF3EC8FA183B5 /* [CP] Check Pods Manifest.lock */,
 				ADFFFBAA1EA5F32E002CB3DC /* Sources */,
 				ADFFFBAB1EA5F32E002CB3DC /* Frameworks */,
 				ADFFFBAC1EA5F32E002CB3DC /* Resources */,
-				0CDE6231E6731BFD30AA9226 /* [CP] Embed Pods Frameworks */,
-				B886F64C33D847B0D81142BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADFFFBC81EA5F32E002CB3DC /* Build configuration list for PBXNativeTarget "GLViewPagerViewControllerUITests" */;
 			buildPhases = (
+				31093916926242A549F30768 /* [CP] Check Pods Manifest.lock */,
 				ADFFFBB51EA5F32E002CB3DC /* Sources */,
 				ADFFFBB61EA5F32E002CB3DC /* Frameworks */,
 				ADFFFBB71EA5F32E002CB3DC /* Resources */,
+				1737736FC110E580B1D92979 /* [CP] Embed Pods Frameworks */,
+				0BC0CA9417CDC25A15DFCB3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,8 +258,8 @@
 					};
 					ADFFFBB81EA5F32E002CB3DC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 32URLK6K7Y;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = YM2JKQV767;
+						ProvisioningStyle = Manual;
 						TestTargetID = ADFFFB941EA5F32E002CB3DC;
 					};
 				};
@@ -325,7 +327,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewController/Pods-GLViewPagerViewController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0CDE6231E6731BFD30AA9226 /* [CP] Embed Pods Frameworks */ = {
+		0BC0CA9417CDC25A15DFCB3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewControllerUITests/Pods-GLViewPagerViewControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1737736FC110E580B1D92979 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,7 +354,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewControllerTests/Pods-GLViewPagerViewControllerTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewControllerUITests/Pods-GLViewPagerViewControllerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31093916926242A549F30768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3DDE5822F6B2B63E5CF12EE3 /* [CP] Embed Pods Frameworks */ = {
@@ -355,36 +387,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewController/Pods-GLViewPagerViewController-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		553DEFAD5E8DF3EC8FA183B5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B886F64C33D847B0D81142BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLViewPagerViewControllerTests/Pods-GLViewPagerViewControllerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CDA211523BAA63DBCBE4AFC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,7 +399,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -589,7 +591,6 @@
 		};
 		ADFFFBC61EA5F32E002CB3DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FD60DDD93453EB753AB7C43 /* Pods-GLViewPagerViewControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 32URLK6K7Y;
@@ -603,7 +604,6 @@
 		};
 		ADFFFBC71EA5F32E002CB3DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A3AFF0AAAB1E02964340011 /* Pods-GLViewPagerViewControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 32URLK6K7Y;
@@ -617,24 +617,29 @@
 		};
 		ADFFFBC91EA5F32E002CB3DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291283C06601E6D83BDEF0AD /* Pods-GLViewPagerViewControllerUITests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				DEVELOPMENT_TEAM = YM2JKQV767;
 				INFOPLIST_FILE = GLViewPagerViewControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c35a670f-a15e-45e6-a434-e48eba9fdeb7";
+				PROVISIONING_PROFILE_SPECIFIER = com.caigoutong.66;
 				TEST_TARGET_NAME = GLViewPagerViewController;
 			};
 			name = Debug;
 		};
 		ADFFFBCA1EA5F32E002CB3DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0004BE5950085B449912BFB5 /* Pods-GLViewPagerViewControllerUITests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 32URLK6K7Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLViewPagerViewControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.star.GLViewPagerViewControllerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_TARGET_NAME = GLViewPagerViewController;
 			};
 			name = Release;

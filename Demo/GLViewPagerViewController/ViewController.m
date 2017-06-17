@@ -60,6 +60,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
     self.navigationItem.title = @"Paged Tabs";
     // Do any additional setup after loading the view.
     self.dataSource = self;
@@ -71,23 +72,7 @@
     self.defaultDisplayPageIndex = 0;
     self.tabAnimationType = GLTabAnimationType_whileScrolling;
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
-    self.supportArabic = NO;
-    
-    //Test Case1
-//    self.fixTabWidth = NO;
-//    self.supportArabic = NO;
-    
-    //Test case2
-//    self.fixTabWidth = NO;
-//    self.supportArabic = YES;
-//
-    // Test case3
-//    self.fixTabWidth = YES;
-//    self.supportArabic = YES;
-//
-    // Test case4
-//    self.fixTabWidth = YES;
-//    self.supportArabic = NO;
+    self.supportArabic = YES;
     
     /** 设置内容视图 */
     self.viewControllers = @[
@@ -109,13 +94,13 @@
                        @"Page One",
                        @"Page Two",
                        @"Page Three",
-                       @"Page Four Four Four",
-                       @"Five",
+                       @"Page Four",
+                       @"Page Five",
                        @"Page Six",
                        @"Page Seven",
-                       @"Eight",
+                       @"Page Eight",
                        @"Page Nine",
-                       @"Page Ten Ten Ten",
+                       @"Page Ten",
                        @"Page Eleven",
                        @"Page Twelve"
                        ];

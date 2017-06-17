@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-GLViewPagerViewControllerTests.xcscheme</key>
+		<key>Pods-GLViewPagerViewControllerUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +22,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>66D34CF11B3AB9595E7BF3868CDAD83E</key>
+		<key>2502F46A3933C6EADE9BA72329624725</key>
 		<dict>
 			<key>primary</key>
 			<true/>

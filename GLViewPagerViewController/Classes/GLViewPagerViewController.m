@@ -214,7 +214,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
                 indicationAnimationWidth = indicatorViewFrame.size.width + leftMinusCurrentWidth * scale;
             }
             else {
-                offset =  rightTabOffsetWidth * scale;
+                offset = rightTabOffsetWidth * scale;
                 indicationAnimationWidth = indicatorViewFrame.size.width + rightMinusCurrentWidth * scale;
             }
             
@@ -235,7 +235,6 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
         }
         /** right to left */
         else {
-            
             if (self.supportArabic) {
                 offset =  rightTabOffsetWidth * scale;
                 indicationAnimationWidth = indicatorViewFrame.size.width + rightMinusCurrentWidth * scale;
@@ -734,7 +733,6 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
         _pageViewController.view.backgroundColor = kPageViewCtrlBackgroundColor;
         _pageViewController.dataSource = self;
         _pageViewController.delegate = self;
-        
         for (UIView *view in _pageViewController.view.subviews) {
             if ([view isKindOfClass:[UIScrollView class]]) {
                 [(UIScrollView *)view setDelegate:self];
