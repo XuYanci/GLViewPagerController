@@ -60,7 +60,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
     self.navigationItem.title = @"Paged Tabs";
     // Do any additional setup after loading the view.
     self.dataSource = self;
@@ -72,7 +71,7 @@
     self.defaultDisplayPageIndex = 0;
     self.tabAnimationType = GLTabAnimationType_whileScrolling;
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
-    self.supportArabic = NO;
+    self.supportArabic = YES;
     
     /** 设置内容视图 */
     self.viewControllers = @[
@@ -124,10 +123,12 @@
     UILabel *label = [[UILabel alloc]init];
     label.text = [self.tagTitles objectAtIndex:index];
     label.font = [UIFont systemFontOfSize:16.0];
-    label.textColor = [UIColor colorWithRed:0.3
-                                      green:0.3
-                                       blue:0.3
-                                      alpha:1.0]; /* 默认灰颜色 */
+    /** 默认紫色 */
+    label.textColor =[UIColor colorWithRed:0.5
+                                     green:0.0
+                                      blue:0.5
+                                     alpha:1.0];
+ 
     label.textAlignment = NSTextAlignmentCenter;
     label.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
  
@@ -144,16 +145,17 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
     UILabel *currentLabel = (UILabel *)[viewPager tabViewAtIndex:index];
     prevLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
     currentLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
-    /* 灰色默认颜色 */
-    prevLabel.textColor =[UIColor colorWithRed:0.3
-                                         green:0.3
-                                          blue:0.3
-                                         alpha:1.0];
-    /* 紫色高亮颜色 */
-    currentLabel.textColor = [UIColor colorWithRed:0.5
-                                             green:0.0
-                                              blue:0.5
-                                             alpha:1.0];
+    /* 紫色默认颜色 */
+    prevLabel.textColor = [UIColor colorWithRed:0.5
+                                          green:0.0
+                                           blue:0.5
+                                          alpha:1.0];
+  
+    /* 灰色高亮颜色 */
+    currentLabel.textColor =   [UIColor colorWithRed:0.3
+                                               green:0.3
+                                                blue:0.3
+                                               alpha:1.0];
 }
 
 - (void)viewPager:(GLViewPagerViewController *)viewPager willChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex withTransitionProgress:(CGFloat)progress {
@@ -170,16 +172,17 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
                                                     0.9 + (0.1 * progress),
                                                     0.9 + (0.1 * progress));
     
-    /* 从灰色变成紫色 ! 这个和alpha值设置无关*/
-    currentLabel.textColor =[UIColor colorWithRed:0.3 + 0.2 * progress
+ 
+    currentLabel.textColor =[UIColor colorWithRed:0.5 - 0.2 * progress
+                                            green:0.0 + 0.3 * progress
+                                             blue:0.5 - 0.2 * progress
+                                            alpha:1.0];
+ 
+    prevLabel.textColor =[UIColor colorWithRed:0.3 + 0.2 * progress
                                          green:0.3 - 0.3 * progress
                                           blue:0.3 + 0.2 * progress
                                          alpha:1.0];
-    /* 从紫色变成灰色 ! 这个和alpha值设置无关*/
-    prevLabel.textColor =[UIColor colorWithRed:0.5 - 0.2 * progress
-                                         green:0.0 + 0.3 * progress
-                                          blue:0.5 - 0.2 * progress
-                                         alpha:1.0];
+
 }
 
 
