@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @interface GLPresentViewController : UIViewController
-
 - (id)initWithTitle:(NSString *)title;
 @end
 
@@ -53,6 +52,7 @@
 @interface ViewController ()<GLViewPagerViewControllerDataSource,GLViewPagerViewControllerDelegate>
 @property (nonatomic,strong)NSArray *viewControllers;
 @property (nonatomic,strong)NSArray *tagTitles;
+@property (nonatomic,assign)BOOL fullfillTabs;  /** Fullfilltabs when tabs width less than view width */
 @end
 
 @implementation ViewController
@@ -71,7 +71,8 @@
     self.defaultDisplayPageIndex = 0;
     self.tabAnimationType = GLTabAnimationType_whileScrolling;
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
-    self.supportArabic = YES;
+    self.supportArabic = NO;
+    self.fullfillTabs = YES;
     
     /** 设置内容视图 */
     self.viewControllers = @[
@@ -103,6 +104,9 @@
                        @"Page Eleven",
                        @"Page Twelve"
                        ];
+    
+    
+ 
 }
 
 
@@ -130,8 +134,9 @@
                                      alpha:1.0];
  
     label.textAlignment = NSTextAlignmentCenter;
+#if 0
     label.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
- 
+#endif
     return label;
 }
 
@@ -143,8 +148,10 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
 - (void)viewPager:(GLViewPagerViewController *)viewPager didChangeTabToIndex:(NSUInteger)index fromTabIndex:(NSUInteger)fromTabIndex {
     UILabel *prevLabel = (UILabel *)[viewPager tabViewAtIndex:fromTabIndex];
     UILabel *currentLabel = (UILabel *)[viewPager tabViewAtIndex:index];
+#if 0
     prevLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
     currentLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+#endif
     /* 紫色默认颜色 */
     prevLabel.textColor = [UIColor colorWithRed:0.5
                                           green:0.0
@@ -165,6 +172,8 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
     }
     UILabel *prevLabel = (UILabel *)[viewPager tabViewAtIndex:fromTabIndex];
     UILabel *currentLabel = (UILabel *)[viewPager tabViewAtIndex:index];
+    
+#if 0
     prevLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity,
                                                  1.0 - (0.1 * progress),
                                                  1.0 - (0.1 * progress));
@@ -172,7 +181,8 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
                                                     0.9 + (0.1 * progress),
                                                     0.9 + (0.1 * progress));
     
- 
+#endif
+    
     currentLabel.textColor =[UIColor colorWithRed:0.5 - 0.2 * progress
                                             green:0.0 + 0.3 * progress
                                              blue:0.5 - 0.2 * progress
@@ -182,6 +192,7 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
                                          green:0.3 - 0.3 * progress
                                           blue:0.3 + 0.2 * progress
                                          alpha:1.0];
+
 
 }
 
@@ -194,8 +205,62 @@ contentViewControllerForTabAtIndex:(NSUInteger)index {
     prototypeLabel.text = [self.tagTitles objectAtIndex:index];
     prototypeLabel.textAlignment = NSTextAlignmentCenter;
     prototypeLabel.font = [UIFont systemFontOfSize:16.0];
-    return prototypeLabel.intrinsicContentSize.width;
+#if 0
+    prototypeLabel.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
+#endif
+    return prototypeLabel.intrinsicContentSize.width + (self.fullfillTabs == YES ?  [self tabsFulFillToScreenWidthInset] : 0);
 }
+
+#pragma mark - funcs
+
+- (CGFloat)tabsFulFillToScreenWidthInset {
+    if ([self isTabsWidthGreaterThanScreenWidth]) {
+        return 0.0;
+    }
+    
+    return [self screenleftWidthForTabs] / self.tagTitles.count;
+}
+
+- (CGFloat)estimateTabsWidthInView {
+    static UILabel *prototypeLabel ;
+    if (!prototypeLabel) {
+        prototypeLabel = [[UILabel alloc]init];
+    }
+    prototypeLabel.textAlignment = NSTextAlignmentCenter;
+    prototypeLabel.font = [UIFont systemFontOfSize:16.0];
+    
+    CGFloat estimateTabsWidth = 0.0;
+    estimateTabsWidth += self.leadingPadding;
+    
+    for (NSUInteger i = 0; i < self.tagTitles.count; i++) {
+        prototypeLabel.text = [self.tagTitles objectAtIndex:i];
+        estimateTabsWidth += prototypeLabel.intrinsicContentSize.width;
+        if (i == self.tagTitles.count - 1) {
+            estimateTabsWidth += 0;
+        }
+        else {
+            estimateTabsWidth += self.padding;
+        }
+    }
+    estimateTabsWidth+=self.trailingPadding;
+    return estimateTabsWidth;
+}
+
+- (CGFloat)screenleftWidthForTabs {
+    CGFloat tabsWidth = [self estimateTabsWidthInView];
+    return self.view.bounds.size.width - tabsWidth;
+}
+
+- (BOOL)isTabsWidthGreaterThanScreenWidth {
+    return [self screenleftWidthForTabs] < 0 ? true : false;
+}
+
+
+
+
+
+
+
 
 
 @end
