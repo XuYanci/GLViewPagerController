@@ -136,7 +136,8 @@ contentViewControllerForTabAtIndex:(NSUInteger)index;
 @property (nonatomic,assign)GLTabAnimationType tabAnimationType;
 /** 支持阿拉伯 when ture, all layout will reverse*/
 @property (nonatomic,assign)BOOL supportArabic;
-
+/** 内容视图超越边界不可滚动 */
+@property (nonatomic,assign)BOOL contentViewBounce;
 
 /** 重新加载数据,会调用DataSource方法并重新构建视图 */
 - (void)reloadData;
