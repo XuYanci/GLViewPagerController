@@ -73,6 +73,8 @@
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
     self.supportArabic = NO;
     self.fullfillTabs = YES;
+    self.fixIndicatorWidth = YES;
+    self.indicatorWidth = 20.0;
     self.contentViewBounce = YES;
     /** 设置内容视图 */
     self.viewControllers = @[

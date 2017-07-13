@@ -200,27 +200,27 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    if (self.contentViewBounce) {
-        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
-            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
-                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
-            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-        }
-    }
+//    if (self.contentViewBounce) {
+//        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
+//                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//        }
+//    }
 }
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView  {
 
-    if (self.contentViewBounce) {
-        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
-            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
-                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
-            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0); 
-        }
-    }
+//    if (self.contentViewBounce) {
+//        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
+//                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0); 
+//        }
+//    }
     
     if (self.tabAnimationType == GLTabAnimationType_whileScrolling && _enableTabAnimationWhileScrolling) {
         CGFloat scale = fabs((scrollView.contentOffset.x - scrollView.frame.size.width) /  scrollView.frame.size.width);
@@ -228,13 +228,14 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
         CGFloat offset = 0;
         CGFloat indicationAnimationWidth = 0;
         NSUInteger currentPageIndex = _currentPageIndex;
-        CGRect indicatorViewFrame = [self _caculateTabViewFrame:currentPageIndex];
+        CGRect indicatorViewFrame = [self _caculateIndicatorViewFrame:currentPageIndex];
         
         /** left to right */
         if (scrollView.contentOffset.x - scrollView.frame.size.width > 0) {
             if (self.supportArabic) {
                 offset = -leftTabOffsetWidth * scale;
                 indicationAnimationWidth = indicatorViewFrame.size.width + leftMinusCurrentWidth * scale;
+                
             }
             else {
                 offset = rightTabOffsetWidth * scale;
@@ -281,8 +282,10 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
                 }
             }
         }
+        
+        
         indicatorViewFrame.origin.x += offset;
-        indicatorViewFrame.size.width = indicationAnimationWidth;
+        indicatorViewFrame.size.width = self.fixIndicatorWidth ? self.indicatorWidth : indicationAnimationWidth;
         self.indicatorView.frame = indicatorViewFrame;
     }
 }
@@ -540,7 +543,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     
     NSAssert(tabIndex <= self.tabViews.count - 1, @"Default display page index is bigger than amount of  view controller");
    
-    CGRect frameOfTabView = [self _caculateTabViewFrame:tabIndex];
+    CGRect frameOfTabView = [self _caculateIndicatorViewFrame:tabIndex];
     if (self.tabAnimationType == GLTabAnimationType_end
         || self.tabAnimationType == GLTabAnimationType_whileScrolling) {
         [UIView animateWithDuration:self.animationTabDuration animations:^{
@@ -579,8 +582,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 - (void)_setActivePageIndex:(NSUInteger)pageIndex {
     NSAssert(pageIndex <= self.contentViewControllers.count - 1, @"Default display page index is bigger than amount of  view controller");
     
-    
-    
+
     UIPageViewControllerNavigationDirection direction = self.supportArabic ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse;
     if (pageIndex > _currentPageIndex) {
         direction = self.supportArabic ? UIPageViewControllerNavigationDirectionReverse: UIPageViewControllerNavigationDirectionForward;
@@ -624,22 +626,33 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 }
 
 /** 计算标签位置大小等 */
-- (CGRect)_caculateTabViewFrame:(NSUInteger)tabIndex {
+- (CGRect)_caculateIndicatorViewFrame:(NSUInteger)tabIndex {
     
-    CGRect frameOfTabView = CGRectZero;
-    if (self.fixTabWidth) {
+    CGRect frameOfIndicatorView = CGRectZero;
+    
+     if (self.fixTabWidth) {
         
         if (self.supportArabic) {
-            frameOfTabView.origin.x = self.tabContentView.contentSize.width -  (tabIndex * self.tabWidth + (tabIndex * self.padding) + self.trailingPadding) - self.tabWidth;
-            frameOfTabView.origin.y = self.tabHeight - self.indicatorHeight;
-            frameOfTabView.size.height = self.indicatorHeight;
-            frameOfTabView.size.width = self.tabWidth;
+            frameOfIndicatorView.origin.x = self.tabContentView.contentSize.width -  (tabIndex * self.tabWidth + (tabIndex * self.padding) + self.trailingPadding) - self.tabWidth;
+            frameOfIndicatorView.origin.y = self.tabHeight - self.indicatorHeight;
+            frameOfIndicatorView.size.height = self.indicatorHeight;
+            frameOfIndicatorView.size.width = self.tabWidth;
+            
+            if (self.fixIndicatorWidth) {
+                frameOfIndicatorView.origin.x -= (self.tabWidth - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.size.width = self.indicatorWidth;
+            }
         }
         else {
-            frameOfTabView.origin.x = tabIndex * self.tabWidth + (tabIndex * self.padding) + self.leadingPadding;
-            frameOfTabView.origin.y = self.tabHeight - self.indicatorHeight;
-            frameOfTabView.size.height = self.indicatorHeight;
-            frameOfTabView.size.width = self.tabWidth;
+            frameOfIndicatorView.origin.x = tabIndex * self.tabWidth + (tabIndex * self.padding) + self.leadingPadding;
+            frameOfIndicatorView.origin.y = self.tabHeight - self.indicatorHeight;
+            frameOfIndicatorView.size.height = self.indicatorHeight;
+            frameOfIndicatorView.size.width = self.tabWidth;
+            
+            if (self.fixIndicatorWidth) {
+                frameOfIndicatorView.origin.x += (self.tabWidth - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.size.width = self.indicatorWidth;
+            }
         }
     }
     else {
@@ -654,11 +667,16 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
                 x += self.padding;
             }
             x += CGRectGetMaxX(previousTabView.frame);
-            frameOfTabView = CGRectZero;
-            frameOfTabView.origin.x = x;
-            frameOfTabView.origin.y = self.tabHeight - self.indicatorHeight;
-            frameOfTabView.size.height = self.indicatorHeight;
-            frameOfTabView.size.width = [self _getTabWidthAtIndex:tabIndex];
+            frameOfIndicatorView = CGRectZero;
+            frameOfIndicatorView.origin.x = x;
+            frameOfIndicatorView.origin.y = self.tabHeight - self.indicatorHeight;
+            frameOfIndicatorView.size.height = self.indicatorHeight;
+            frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
+            
+            if (self.fixIndicatorWidth) {
+                frameOfIndicatorView.origin.x -= (frameOfIndicatorView.size.width - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.size.width = self.indicatorWidth;
+            }
             
         }
         else {
@@ -671,16 +689,21 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
                 x += self.padding;
             }
             x += CGRectGetMaxX(previousTabView.frame);
-            frameOfTabView = CGRectZero;
-            frameOfTabView.origin.x = x;
-            frameOfTabView.origin.y = self.tabHeight - self.indicatorHeight;
-            frameOfTabView.size.height = self.indicatorHeight;
-            frameOfTabView.size.width = [self _getTabWidthAtIndex:tabIndex];
+            frameOfIndicatorView = CGRectZero;
+            frameOfIndicatorView.origin.x = x;
+            frameOfIndicatorView.origin.y = self.tabHeight - self.indicatorHeight;
+            frameOfIndicatorView.size.height = self.indicatorHeight;
+            frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
+            
+            if (self.fixIndicatorWidth) {
+                frameOfIndicatorView.origin.x += (frameOfIndicatorView.size.width - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.size.width = self.indicatorWidth;
+            }
         }
         
         
     }
-    return frameOfTabView;
+    return frameOfIndicatorView;
 }
 
 /** 计算当前标签偏移左边偏移右边宽度 */
