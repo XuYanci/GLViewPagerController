@@ -64,7 +64,7 @@
     // Do any additional setup after loading the view.
     self.dataSource = self;
     self.delegate = self;
-    self.fixTabWidth = NO;
+    self.fixTabWidth = YES;
     self.padding = 10;
     self.leadingPadding = 10;
     self.trailingPadding = 10;
@@ -74,8 +74,8 @@
     self.supportArabic = NO;
     self.fullfillTabs = YES;
     self.fixIndicatorWidth = YES;
-    self.indicatorWidth = 20.0;
-    self.contentViewBounce = YES;
+    self.indicatorWidth = 20;
+ 
     /** 设置内容视图 */
     self.viewControllers = @[
                              [[GLPresentViewController alloc]initWithTitle:@"Page One"],
