@@ -200,27 +200,12 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-//    if (self.contentViewBounce) {
-//        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
-//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-//        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
-//                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
-//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-//        }
-//    }
+ 
 }
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView  {
-
-//    if (self.contentViewBounce) {
-//        if (_currentPageIndex == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
-//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-//        } else if (_currentPageIndex == (self.contentViewControllers.count - 1)
-//                   && scrollView.contentOffset.x > scrollView.bounds.size.width) {
-//            scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0); 
-//        }
-//    }
+ 
     
     if (self.tabAnimationType == GLTabAnimationType_whileScrolling && _enableTabAnimationWhileScrolling) {
         CGFloat scale = fabs((scrollView.contentOffset.x - scrollView.frame.size.width) /  scrollView.frame.size.width);
