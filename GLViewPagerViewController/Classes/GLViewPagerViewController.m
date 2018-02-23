@@ -624,7 +624,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = self.tabWidth;
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x -= (self.tabWidth) / 2.0;
+                frameOfIndicatorView.origin.x -= (self.tabWidth) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }
@@ -635,7 +635,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = self.tabWidth;
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x += (self.tabWidth) / 2.0;
+                frameOfIndicatorView.origin.x += (self.tabWidth) / 2.0 - _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }
@@ -659,7 +659,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x -= (frameOfIndicatorView.size.width) / 2.0;
+                frameOfIndicatorView.origin.x -= (frameOfIndicatorView.size.width) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
             
@@ -681,7 +681,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x += (frameOfIndicatorView.size.width) / 2.0;
+                frameOfIndicatorView.origin.x += (frameOfIndicatorView.size.width) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }

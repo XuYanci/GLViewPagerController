@@ -64,7 +64,7 @@
     // Do any additional setup after loading the view.
     self.dataSource = self;
     self.delegate = self;
-    self.fixTabWidth = YES;
+    self.fixTabWidth = false;
     self.padding = 10;
     self.leadingPadding = 10;
     self.trailingPadding = 10;
@@ -72,7 +72,7 @@
     self.tabAnimationType = GLTabAnimationType_whileScrolling;
     self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
     self.supportArabic = NO;
-    self.fullfillTabs = YES;
+    self.fullfillTabs = NO;
     self.fixIndicatorWidth = YES;
     self.indicatorWidth = 20;
  
