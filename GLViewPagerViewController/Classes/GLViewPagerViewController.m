@@ -106,6 +106,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     /** @note 如果先添加tabContentView会导致contentSize设置无效、具体原因待查明 */
     [self.view addSubview:self.tabContentView];
     [self.tabContentView addSubview:self.indicatorView];
+    [self addChild:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
 }
 
