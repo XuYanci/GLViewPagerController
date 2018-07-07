@@ -99,6 +99,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     
 }
 
+ 
 //- (void)loadView  {
 //    self.view = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
 //    self.view.backgroundColor = kBackgroundColor;
@@ -108,6 +109,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 //    [self.tabContentView addSubview:self.indicatorView];
 //    [self.view addSubview:self.pageViewController.view];
 //}
+
 
 - (void)viewWillLayoutSubviews {
     [self _reloadDataIfNeed];
@@ -628,7 +630,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = self.tabWidth;
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x -= (self.tabWidth - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.origin.x -= (self.tabWidth) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }
@@ -639,7 +641,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = self.tabWidth;
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x += (self.tabWidth - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.origin.x += (self.tabWidth) / 2.0 - _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }
@@ -663,7 +665,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x -= (frameOfIndicatorView.size.width - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.origin.x -= (frameOfIndicatorView.size.width) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
             
@@ -685,7 +687,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
             frameOfIndicatorView.size.width = [self _getTabWidthAtIndex:tabIndex];
             
             if (self.fixIndicatorWidth) {
-                frameOfIndicatorView.origin.x += (frameOfIndicatorView.size.width - self.fixIndicatorWidth) / 2.0;
+                frameOfIndicatorView.origin.x += (frameOfIndicatorView.size.width) / 2.0 -  _indicatorWidth / 2.0;
                 frameOfIndicatorView.size.width = self.indicatorWidth;
             }
         }
