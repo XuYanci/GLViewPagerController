@@ -99,15 +99,15 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     
 }
 
-- (void)loadView  {
-    self.view = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.view.backgroundColor = kBackgroundColor;
-    [self.view addSubview:[[UIView alloc]init]];
-    /** @note 如果先添加tabContentView会导致contentSize设置无效、具体原因待查明 */
-    [self.view addSubview:self.tabContentView];
-    [self.tabContentView addSubview:self.indicatorView];
-    [self.view addSubview:self.pageViewController.view];
-}
+//- (void)loadView  {
+//    self.view = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    self.view.backgroundColor = kBackgroundColor;
+//    [self.view addSubview:[[UIView alloc]init]];
+//    /** @note 如果先添加tabContentView会导致contentSize设置无效、具体原因待查明 */
+//    [self.view addSubview:self.tabContentView];
+//    [self.tabContentView addSubview:self.indicatorView];
+//    [self.view addSubview:self.pageViewController.view];
+//}
 
 - (void)viewWillLayoutSubviews {
     [self _reloadDataIfNeed];
@@ -122,8 +122,12 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
+    self.view.backgroundColor = kBackgroundColor;
+    [self.view addSubview:self.tabContentView];
+    [self.tabContentView addSubview:self.indicatorView];
+    [self addChildViewController:self.pageViewController];
+    [self.view addSubview:self.pageViewController.view];
+    [self commonInit];
 }
 
 #pragma mark - datasource
