@@ -247,7 +247,7 @@
 				TargetAttributes = {
 					ADFFFB941EA5F32E002CB3DC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = YM2JKQV767;
+						DevelopmentTeam = YTA3WJD8SA;
 						ProvisioningStyle = Manual;
 					};
 					ADFFFBAD1EA5F32E002CB3DC = {
@@ -561,16 +561,16 @@
 			baseConfigurationReference = D3CC35707BA65B87F21C8065 /* Pods-GLViewPagerViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dong ZHANG (GVLQ896DY2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dong ZHANG (GVLQ896DY2)";
-				DEVELOPMENT_TEAM = YM2JKQV767;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hu liang hua (TJ6YVRTU9M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hu liang hua (TJ6YVRTU9M)";
+				DEVELOPMENT_TEAM = YTA3WJD8SA;
 				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.66;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douya.glviewpagerviewcontroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c35a670f-a15e-45e6-a434-e48eba9fdeb7";
-				PROVISIONING_PROFILE_SPECIFIER = com.caigoutong.66;
+				PROVISIONING_PROFILE = "27bea60a-7c84-4c50-9b9b-8acbbe0e5d38";
+				PROVISIONING_PROFILE_SPECIFIER = DouYaGlViewPagerViewController;
 			};
 			name = Debug;
 		};
@@ -579,12 +579,12 @@
 			baseConfigurationReference = 95AC78BA088EC9666BC10625 /* Pods-GLViewPagerViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dong ZHANG (GVLQ896DY2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hu liang hua (TJ6YVRTU9M)";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLViewPagerViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.caigoutong.66;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douya.glviewpagerviewcontroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
