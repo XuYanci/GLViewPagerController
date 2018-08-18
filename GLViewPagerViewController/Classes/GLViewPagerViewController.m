@@ -79,20 +79,21 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     CGFloat rightMinusCurrentWidth; /** 右标签减去当前标签得出宽度 */
     NSUInteger _currentPageIndex;   /** 当前页 */
     BOOL _enableTabAnimationWhileScrolling; /** 是否允许标签滑动显示 */
+ 
 }
 
 
 #pragma mark - life cycle
 - (id)init {
     if (self = [super init]) {
-        [self commonInit];
+        [self defaultSetup];
     }
     return self;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self commonInit];
+    [self defaultSetup];
 }
 
 - (void)dealloc {
@@ -112,12 +113,13 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /** 添加视图tabContentView,indicatorView,PageViewController */
     self.view.backgroundColor = kBackgroundColor;
     [self.view addSubview:self.tabContentView];
     [self.tabContentView addSubview:self.indicatorView];
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
-    [self commonInit];
 }
 
 #pragma mark - datasource
@@ -271,6 +273,9 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 
 #pragma mark - user events
 - (void)tapInTabView:(UITapGestureRecognizer *)tapGR {
+
+    
+    
     NSUInteger tabIndex = tapGR.view.tag - kTabTagBegin;
     [self _selectTab:tabIndex animate:NO];
 }
@@ -281,7 +286,8 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
 /**
  默认初始化
  */
-- (void)commonInit {
+- (void)defaultSetup {
+    
     /** 初始化默认参数 */
     self.indicatorColor = kIndicatorColor;
     self.tabFontDefault = kTabFontDefault;
@@ -300,7 +306,7 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     self.defaultDisplayPageIndex = kDefaultDisplayPageIndex;
     self.tabAnimationType = kTabAnimationType;
     self.animationTabDuration = kAnimationTabDuration;
-    [self _setNeedsReload];
+     
 }
 
 - (void)setDataSource:(id<GLViewPagerViewControllerDataSource>)newDataSource {
@@ -571,10 +577,11 @@ static const GLTabAnimationType kTabAnimationType = GLTabAnimationType_none;
     
     [self.pageViewController setViewControllers:@[self.contentViewControllers[pageIndex]]
                                       direction:direction
-                                       animated:YES
+                                       animated:NO
                                      completion:^(BOOL finished) {
                                          __strong typeof(weakSelf) strongSelf = weakSelf;
                                          if (finished) {
+                                             NSLog(@"finish....");
                                              dispatch_async(dispatch_get_main_queue(), ^{
                                                  if (strongSelf) {
                                                      [strongSelf.pageViewController setViewControllers:@[strongSelf.contentViewControllers[pageIndex]]

@@ -62,19 +62,33 @@
     
     self.navigationItem.title = @"Paged Tabs";
     // Do any additional setup after loading the view.
+    /// 设置数据源
     self.dataSource = self;
+    /// 设置数据委托
     self.delegate = self;
+    /// 是否固定标签宽度
     self.fixTabWidth = false;
+    /// Tab之间边距
     self.padding = 10;
-    self.leadingPadding = 10;
-    self.trailingPadding = 10;
-    self.defaultDisplayPageIndex = 0;
-    self.tabAnimationType = GLTabAnimationType_whileScrolling;
-    self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
-    self.supportArabic = NO;
+    /// 是否填充tabs满屏幕
     self.fullfillTabs = NO;
-    self.fixIndicatorWidth = YES;
+    /// 固定指示器宽度
+    self.fixIndicatorWidth = false;
+    /// 指示器宽度
     self.indicatorWidth = 20;
+    /// 指示器颜色
+    self.indicatorColor = [UIColor colorWithRed:255.0/255.0 green:205.0 / 255.0 blue:0.0 alpha:1.0];
+    /// 头边距
+    self.leadingPadding = 10;
+    /// 尾边距
+    self.trailingPadding = 10;
+    /// 默认显示页
+    self.defaultDisplayPageIndex = 0;
+    /// Tab动画
+    self.tabAnimationType = GLTabAnimationType_whileScrolling;
+    /// 是否支持阿拉伯，如果是阿拉伯则反转
+    self.supportArabic = NO;
+ 
  
     /** 设置内容视图 */
     self.viewControllers = @[
@@ -89,7 +103,7 @@
                              [[GLPresentViewController alloc]initWithTitle:@"Page Nine"],
                              [[GLPresentViewController alloc]initWithTitle:@"Page Ten"],
                              [[GLPresentViewController alloc]initWithTitle:@"Page Eleven"],
-                             [[GLPresentViewController alloc]initWithTitle:@"Page Twelve"],
+                             [[GLPresentViewController alloc]initWithTitle:@"Page Twelve Long Long ago"],
                              ];
     /** 设置标签标题 */
     self.tagTitles = @[
@@ -104,10 +118,8 @@
                        @"Page Nine",
                        @"Page Ten",
                        @"Page Eleven",
-                       @"Page Twelve"
+                       @"Page Twelve Long Long ago"
                        ];
-    
-    
  
 }
 
